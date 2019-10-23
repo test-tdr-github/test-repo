@@ -36,6 +36,7 @@ permissions:
 # During the ApplicationStop deployment lifecycle event, run the commands 
 #   in the script specified in "location" starting from the root of the 
 #   revision's file bundle.
+hooks:
   ApplicationStop:
     - location: /sbin/service httpd stop
       timeout:
