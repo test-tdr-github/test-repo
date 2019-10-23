@@ -39,8 +39,7 @@ permissions:
 hooks:
   ApplicationStop:
     - location: /sbin/service httpd stop
-      timeout:
-      runas:
+      timeout: 300
 # During the BeforeInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   BeforeInstall:
