@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "I wrote this file" >> hello.txt
+echo "I wrote this file" >> /var/www/html/hello.txt
