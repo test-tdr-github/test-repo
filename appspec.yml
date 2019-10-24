@@ -38,11 +38,11 @@ permissions:
 #   revision's file bundle.
 hooks:
   ApplicationStop:
-    - location: /sbin/service httpd stop
+    - location: /tmp/scripts/stop_server.sh
       timeout: 300
 # During the AfterInstall deployment lifecycle event, run the commands 
 #   in the script specified in "location".
   AfterInstall:
-    - location: /sbin/service httpd start
+    - location: /tmp/scripts/start_server.sh
       timeout: 300
 
